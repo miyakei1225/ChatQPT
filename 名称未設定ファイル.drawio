@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-29T01:38:05.513Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="w0Jj8Yt0DJZVRMpxRiQ6" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-29T01:40:21.654Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="IE0VatjHrDXVpNgIGnT_" version="21.0.6" type="github">
   <diagram name="ページ1" id="blrkiH1Wrp8HNXF4LEu2">
     <mxGraphModel dx="3745" dy="2389" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -69,6 +69,15 @@
               <mxPoint x="-230" y="240" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="PukUoT7xIW04Ux_r5Jpp-81" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="300" y="370" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PukUoT7xIW04Ux_r5Jpp-82" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="PukUoT7xIW04Ux_r5Jpp-81">
+          <mxGeometry width="247.31707317073167" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PukUoT7xIW04Ux_r5Jpp-83" value="&lt;span style=&quot;font-size: 36px;&quot;&gt;gpt-3.5-turbo&lt;br&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="PukUoT7xIW04Ux_r5Jpp-81">
+          <mxGeometry x="60.183315208948265" y="24" width="126.96390658174097" height="32" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
