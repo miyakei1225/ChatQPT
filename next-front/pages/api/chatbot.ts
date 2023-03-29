@@ -25,18 +25,13 @@ async function sendMessage(replyToken: string, messages: any[]): Promise<any> {
   return await axios.post(LINE_MESSAGING_API_ENDPOINT + '/reply', body, {headers: headers});
 }
 
-async function getChatGPTContent(prompt: string): Promise<string | any> {
+async function getChatGPTContent(prompt: string): Promise<string | undefined> {
   const completion = await openai.createChatCompletion({
     model: "gpt-3.5-turbo",
-    messages: [{role: "user", "content": `${prompt} これらの食材を使ったズボラなレシピを1つ日本語で提案してください。必ずしも全ての食材を使う必要はありません。`}],
-    temperature: 1, // 生成された文の多様性をコントロールするための係数。0から1までを指定します。0に近いほど、より既存の文章に似た文になります。
-    max_tokens: 60, // 生成する応答の最大単語数。この場合は60単語。
-    n: 1, // 生成する文の数。1に設定することで、1つの文だけを生成!
-    stop: '\n' // 生成されたテキストの終わりを示すトークン。例えば、改行文字などを指定することが出来る
+    messages: [{role: "user", "content": `「${prompt}」カッコの中に記載されたこれらの食材を使ったズボラなレシピを1つ最初に材料費を掲示してから日本語で提案してください。必ずしも全ての食材を使う必要はありません。`}],
+    temperature: 1,
   });
-
   return completion.data.choices[0].message?.content
-
 }
 
 export default async function chatbot(req: NextApiRequest, res: NextApiResponse) {
